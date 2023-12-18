@@ -1,0 +1,1100 @@
+{
+  "records": {
+    "ramp": {
+      "wnid": "",
+      "wcategory": "",
+      "scale_factor": 1.0,
+      "do_not_use": false,
+      "do_not_use_reason": "",
+      "canonical_rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "flex": false,
+      "physics_quality": 1.0,
+      "asset_bundle_sizes": {
+        "Windows": 0,
+        "Darwin": 65454,
+        "Linux": 0
+      },
+      "bounds": {
+        "center": {
+          "x": 1.93296361,
+          "y": 4.159855,
+          "z": -0.8297224
+        },
+        "front": {
+          "x": 1.93296361,
+          "y": 4.159855,
+          "z": 2.6185813
+        },
+        "back": {
+          "x": 1.93296361,
+          "y": 4.159855,
+          "z": -4.278026
+        },
+        "right": {
+          "x": 4.691315,
+          "y": 4.159855,
+          "z": -0.8297224
+        },
+        "left": {
+          "x": -0.825387955,
+          "y": 4.159855,
+          "z": -0.8297224
+        },
+        "top": {
+          "x": 1.93296361,
+          "y": 8.31971,
+          "z": -0.8297224
+        },
+        "bottom": {
+          "x": 1.93296361,
+          "y": 0.0,
+          "z": -0.8297224
+        }
+      },
+      "substructure": [
+        {
+          "name": "default",
+          "materials": [
+            "defaultMat"
+          ]
+        }
+      ],
+      "composite_object": false,
+      "volume": 21.2728081,
+      "container_shapes": [],
+      "name": "ramp",
+      "urls": {
+        "Windows": "file:////Users/cfang/balls/TDW_objects/Windows/ramp",
+        "Darwin": "file:////Users/cfang/balls/TDW_objects/Darwin/ramp",
+        "Linux": "file:////Users/cfang/balls/TDW_objects/Linux/ramp"
+      }
+    },
+    "ramp2": {
+      "wnid": "",
+      "wcategory": "",
+      "scale_factor": 1.0,
+      "do_not_use": false,
+      "do_not_use_reason": "",
+      "canonical_rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "flex": false,
+      "physics_quality": 1.0,
+      "asset_bundle_sizes": {
+        "Windows": 0,
+        "Darwin": 63760,
+        "Linux": 0
+      },
+      "bounds": {
+        "center": {
+          "x": 1.93296361,
+          "y": 4.159855,
+          "z": -0.8297229
+        },
+        "front": {
+          "x": 1.93296361,
+          "y": 4.159855,
+          "z": 2.61858034
+        },
+        "back": {
+          "x": 1.93296361,
+          "y": 4.159855,
+          "z": -4.278026
+        },
+        "right": {
+          "x": 4.691315,
+          "y": 4.159855,
+          "z": -0.8297229
+        },
+        "left": {
+          "x": -0.825387955,
+          "y": 4.159855,
+          "z": -0.8297229
+        },
+        "top": {
+          "x": 1.93296361,
+          "y": 8.31971,
+          "z": -0.8297229
+        },
+        "bottom": {
+          "x": 1.93296361,
+          "y": 0.0,
+          "z": -0.8297229
+        }
+      },
+      "substructure": [
+        {
+          "name": "default",
+          "materials": [
+            "defaultMat"
+          ]
+        }
+      ],
+      "composite_object": false,
+      "volume": 21.434763,
+      "container_shapes": [],
+      "name": "ramp2",
+      "urls": {
+        "Windows": "file:////Users/cfang/balls/TDW_objects/Windows/ramp2",
+        "Darwin": "file:////Users/cfang/balls/TDW_objects/Darwin/ramp2",
+        "Linux": "file:////Users/cfang/balls/TDW_objects/Linux/ramp2"
+      }
+    },
+    "ramp3": {
+      "wnid": "",
+      "wcategory": "",
+      "scale_factor": 1.0,
+      "do_not_use": false,
+      "do_not_use_reason": "",
+      "canonical_rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "flex": false,
+      "physics_quality": 1.0,
+      "asset_bundle_sizes": {
+        "Windows": 0,
+        "Darwin": 62145,
+        "Linux": 0
+      },
+      "bounds": {
+        "center": {
+          "x": 0.0018465519,
+          "y": 2.788953,
+          "z": 0.272884846
+        },
+        "front": {
+          "x": 0.0018465519,
+          "y": 2.788953,
+          "z": 4.473221
+        },
+        "back": {
+          "x": 0.0018465519,
+          "y": 2.788953,
+          "z": -3.92745113
+        },
+        "right": {
+          "x": 1.32910609,
+          "y": 2.788953,
+          "z": 0.272884846
+        },
+        "left": {
+          "x": -1.325413,
+          "y": 2.788953,
+          "z": 0.272884846
+        },
+        "top": {
+          "x": 0.0018465519,
+          "y": 5.577906,
+          "z": 0.272884846
+        },
+        "bottom": {
+          "x": 0.0018465519,
+          "y": 0.0,
+          "z": 0.272884846
+        }
+      },
+      "substructure": [
+        {
+          "name": "default",
+          "materials": [
+            "defaultMat"
+          ]
+        }
+      ],
+      "composite_object": false,
+      "volume": 58.0084419,
+      "container_shapes": [],
+      "name": "ramp3",
+      "urls": {
+        "Windows": "file:////Users/cfang/balls/TDW_objects/Windows/ramp3",
+        "Darwin": "file:////Users/cfang/balls/TDW_objects/Darwin/ramp3",
+        "Linux": "file:////Users/cfang/balls/TDW_objects/Linux/ramp3"
+      }
+    },
+    "ramp4": {
+      "wnid": "",
+      "wcategory": "",
+      "scale_factor": 1.0,
+      "do_not_use": false,
+      "do_not_use_reason": "",
+      "canonical_rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "flex": false,
+      "physics_quality": 1.0,
+      "asset_bundle_sizes": {
+        "Windows": 0,
+        "Darwin": 61959,
+        "Linux": 0
+      },
+      "bounds": {
+        "center": {
+          "x": 0.0018465519,
+          "y": 2.788953,
+          "z": 0.272884846
+        },
+        "front": {
+          "x": 0.0018465519,
+          "y": 2.788953,
+          "z": 4.473221
+        },
+        "back": {
+          "x": 0.0018465519,
+          "y": 2.788953,
+          "z": -3.92745113
+        },
+        "right": {
+          "x": 1.32910609,
+          "y": 2.788953,
+          "z": 0.272884846
+        },
+        "left": {
+          "x": -1.325413,
+          "y": 2.788953,
+          "z": 0.272884846
+        },
+        "top": {
+          "x": 0.0018465519,
+          "y": 5.577906,
+          "z": 0.272884846
+        },
+        "bottom": {
+          "x": 0.0018465519,
+          "y": 0.0,
+          "z": 0.272884846
+        }
+      },
+      "substructure": [
+        {
+          "name": "default",
+          "materials": [
+            "defaultMat"
+          ]
+        }
+      ],
+      "composite_object": false,
+      "volume": 58.0083542,
+      "container_shapes": [],
+      "name": "ramp4",
+      "urls": {
+        "Windows": "file:////Users/cfang/balls/TDW_objects/Windows/ramp4",
+        "Darwin": "file:////Users/cfang/balls/TDW_objects/Darwin/ramp4",
+        "Linux": "file:////Users/cfang/balls/TDW_objects/Linux/ramp4"
+      }
+    },
+    "ramp5": {
+      "wnid": "",
+      "wcategory": "",
+      "scale_factor": 1.0,
+      "do_not_use": false,
+      "do_not_use_reason": "",
+      "canonical_rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "flex": false,
+      "physics_quality": 1.0,
+      "asset_bundle_sizes": {
+        "Windows": 0,
+        "Darwin": 64691,
+        "Linux": 0
+      },
+      "bounds": {
+        "center": {
+          "x": 0.00105750561,
+          "y": 2.792651,
+          "z": 0.275343418
+        },
+        "front": {
+          "x": 0.00105750561,
+          "y": 2.792651,
+          "z": 4.478996
+        },
+        "back": {
+          "x": 0.00105750561,
+          "y": 2.792651,
+          "z": -3.928309
+        },
+        "right": {
+          "x": 1.334647,
+          "y": 2.792651,
+          "z": 0.275343418
+        },
+        "left": {
+          "x": -1.332532,
+          "y": 2.792651,
+          "z": 0.275343418
+        },
+        "top": {
+          "x": 0.00105750561,
+          "y": 5.585302,
+          "z": 0.275343418
+        },
+        "bottom": {
+          "x": 0.00105750561,
+          "y": 0.0,
+          "z": 0.275343418
+        }
+      },
+      "substructure": [
+        {
+          "name": "default",
+          "materials": [
+            "defaultMat"
+          ]
+        }
+      ],
+      "composite_object": false,
+      "volume": 58.18018,
+      "container_shapes": [],
+      "name": "ramp5",
+      "urls": {
+        "Windows": "file:////Users/cfang/balls/TDW_objects/Windows/ramp5",
+        "Darwin": "file:////Users/cfang/balls/TDW_objects/Darwin/ramp5",
+        "Linux": "file:////Users/cfang/balls/TDW_objects/Linux/ramp5"
+      }
+    },
+    "ramp6": {
+      "wnid": "",
+      "wcategory": "",
+      "scale_factor": 1.0,
+      "do_not_use": false,
+      "do_not_use_reason": "",
+      "canonical_rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "flex": false,
+      "physics_quality": 1.0,
+      "asset_bundle_sizes": {
+        "Windows": 0,
+        "Darwin": 64591,
+        "Linux": 0
+      },
+      "bounds": {
+        "center": {
+          "x": 0.00105750561,
+          "y": 2.792651,
+          "z": 0.275343418
+        },
+        "front": {
+          "x": 0.00105750561,
+          "y": 2.792651,
+          "z": 4.478996
+        },
+        "back": {
+          "x": 0.00105750561,
+          "y": 2.792651,
+          "z": -3.928309
+        },
+        "right": {
+          "x": 1.334647,
+          "y": 2.792651,
+          "z": 0.275343418
+        },
+        "left": {
+          "x": -1.332532,
+          "y": 2.792651,
+          "z": 0.275343418
+        },
+        "top": {
+          "x": 0.00105750561,
+          "y": 5.585302,
+          "z": 0.275343418
+        },
+        "bottom": {
+          "x": 0.00105750561,
+          "y": 0.0,
+          "z": 0.275343418
+        }
+      },
+      "substructure": [
+        {
+          "name": "default",
+          "materials": [
+            "defaultMat"
+          ]
+        }
+      ],
+      "composite_object": false,
+      "volume": 58.1781845,
+      "container_shapes": [],
+      "name": "ramp6",
+      "urls": {
+        "Windows": "file:////Users/cfang/balls/TDW_objects/Windows/ramp6",
+        "Darwin": "file:////Users/cfang/balls/TDW_objects/Darwin/ramp6",
+        "Linux": "file:////Users/cfang/balls/TDW_objects/Linux/ramp6"
+      }
+    },
+    "ramp45": {
+      "wnid": "",
+      "wcategory": "",
+      "scale_factor": 1.0,
+      "do_not_use": false,
+      "do_not_use_reason": "",
+      "canonical_rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "flex": false,
+      "physics_quality": 1.0,
+      "asset_bundle_sizes": {
+        "Windows": 0,
+        "Darwin": 35819,
+        "Linux": 0
+      },
+      "bounds": {
+        "center": {
+          "x": 0.0,
+          "y": 5.0,
+          "z": 0.0
+        },
+        "front": {
+          "x": 0.0,
+          "y": 5.0,
+          "z": 5.0
+        },
+        "back": {
+          "x": 0.0,
+          "y": 5.0,
+          "z": -5.0
+        },
+        "right": {
+          "x": 3.5,
+          "y": 5.0,
+          "z": 0.0
+        },
+        "left": {
+          "x": -3.5,
+          "y": 5.0,
+          "z": 0.0
+        },
+        "top": {
+          "x": 0.0,
+          "y": 10.0,
+          "z": 0.0
+        },
+        "bottom": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "substructure": [
+        {
+          "name": "default",
+          "materials": [
+            "defaultMat"
+          ]
+        }
+      ],
+      "composite_object": false,
+      "volume": 700.001,
+      "container_shapes": [],
+      "name": "ramp45",
+      "urls": {
+        "Windows": "file:////Users/cfang/balls/TDW_objects/Windows/ramp45",
+        "Darwin": "file:////Users/cfang/balls/TDW_objects/Darwin/ramp45",
+        "Linux": "file:////Users/cfang/balls/TDW_objects/Linux/ramp45"
+      }
+    },
+    "surface1": {
+      "wnid": "",
+      "wcategory": "",
+      "scale_factor": 1.0,
+      "do_not_use": false,
+      "do_not_use_reason": "",
+      "canonical_rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "flex": false,
+      "physics_quality": 1.0,
+      "asset_bundle_sizes": {
+        "Windows": 0,
+        "Darwin": 36038,
+        "Linux": 0
+      },
+      "bounds": {
+        "center": {
+          "x": 0.0,
+          "y": 0.493157,
+          "z": -11.8862762
+        },
+        "front": {
+          "x": 0.0,
+          "y": 0.493157,
+          "z": 28.8194885
+        },
+        "back": {
+          "x": 0.0,
+          "y": 0.493157,
+          "z": -52.59204
+        },
+        "right": {
+          "x": 15.2057734,
+          "y": 0.493157,
+          "z": -11.8862762
+        },
+        "left": {
+          "x": -15.2057734,
+          "y": 0.493157,
+          "z": -11.8862762
+        },
+        "top": {
+          "x": 0.0,
+          "y": 0.99316,
+          "z": -11.8862762
+        },
+        "bottom": {
+          "x": 0.0,
+          "y": -0.006845981,
+          "z": -11.8862762
+        }
+      },
+      "substructure": [
+        {
+          "name": "default",
+          "materials": [
+            "defaultMat"
+          ]
+        }
+      ],
+      "composite_object": false,
+      "volume": 2435.15454,
+      "container_shapes": [],
+      "name": "surface1",
+      "urls": {
+        "Windows": "file:////Users/cfang/balls/TDW_objects/Windows/surface1",
+        "Darwin": "file:////Users/cfang/balls/TDW_objects/Darwin/surface1",
+        "Linux": "file:////Users/cfang/balls/TDW_objects/Linux/surface1"
+      }
+    },
+    "surface2": {
+      "wnid": "",
+      "wcategory": "",
+      "scale_factor": 1.0,
+      "do_not_use": false,
+      "do_not_use_reason": "",
+      "canonical_rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "flex": false,
+      "physics_quality": 1.0,
+      "asset_bundle_sizes": {
+        "Windows": 0,
+        "Darwin": 35950,
+        "Linux": 0
+      },
+      "bounds": {
+        "center": {
+          "x": 0.0,
+          "y": 0.493157,
+          "z": -11.8862762
+        },
+        "front": {
+          "x": 0.0,
+          "y": 0.493157,
+          "z": 28.8194885
+        },
+        "back": {
+          "x": 0.0,
+          "y": 0.493157,
+          "z": -52.59204
+        },
+        "right": {
+          "x": 15.2057734,
+          "y": 0.493157,
+          "z": -11.8862762
+        },
+        "left": {
+          "x": -15.2057734,
+          "y": 0.493157,
+          "z": -11.8862762
+        },
+        "top": {
+          "x": 0.0,
+          "y": 0.99316,
+          "z": -11.8862762
+        },
+        "bottom": {
+          "x": 0.0,
+          "y": -0.006845981,
+          "z": -11.8862762
+        }
+      },
+      "substructure": [
+        {
+          "name": "default",
+          "materials": [
+            "defaultMat"
+          ]
+        }
+      ],
+      "composite_object": false,
+      "volume": 2435.15454,
+      "container_shapes": [],
+      "name": "surface2",
+      "urls": {
+        "Windows": "file:////Users/cfang/balls/TDW_objects/Windows/surface2",
+        "Darwin": "file:////Users/cfang/balls/TDW_objects/Darwin/surface2",
+        "Linux": "file:////Users/cfang/balls/TDW_objects/Linux/surface2"
+      }
+    },
+    "ramp45_2": {
+      "wnid": "",
+      "wcategory": "",
+      "scale_factor": 1.0,
+      "do_not_use": false,
+      "do_not_use_reason": "",
+      "canonical_rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "flex": false,
+      "physics_quality": 1.0,
+      "asset_bundle_sizes": {
+        "Windows": 0,
+        "Darwin": 54021,
+        "Linux": 0
+      },
+      "bounds": {
+        "center": {
+          "x": 0.0,
+          "y": 4.995296,
+          "z": -0.439739227
+        },
+        "front": {
+          "x": 0.0,
+          "y": 4.995296,
+          "z": 5.0
+        },
+        "back": {
+          "x": 0.0,
+          "y": 4.995296,
+          "z": -5.87947845
+        },
+        "right": {
+          "x": 3.5,
+          "y": 4.995296,
+          "z": -0.439739227
+        },
+        "left": {
+          "x": -3.5,
+          "y": 4.995296,
+          "z": -0.439739227
+        },
+        "top": {
+          "x": 0.0,
+          "y": 10.0,
+          "z": -0.439739227
+        },
+        "bottom": {
+          "x": 0.0,
+          "y": -0.009407997,
+          "z": -0.439739227
+        }
+      },
+      "substructure": [
+        {
+          "name": "default",
+          "materials": [
+            "defaultMat"
+          ]
+        }
+      ],
+      "composite_object": false,
+      "volume": 129.208374,
+      "container_shapes": [],
+      "name": "ramp45_2",
+      "urls": {
+        "Windows": "file:////Users/cfang/balls/TDW_objects/Windows/ramp45_2",
+        "Darwin": "file:////Users/cfang/balls/TDW_objects/Darwin/ramp45_2",
+        "Linux": "file:////Users/cfang/balls/TDW_objects/Linux/ramp45_2"
+      }
+    },
+    "ramp45_3": {
+      "wnid": "",
+      "wcategory": "",
+      "scale_factor": 1.0,
+      "do_not_use": false,
+      "do_not_use_reason": "",
+      "canonical_rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "flex": false,
+      "physics_quality": 1.0,
+      "asset_bundle_sizes": {
+        "Windows": 0,
+        "Darwin": 50792,
+        "Linux": 0
+      },
+      "bounds": {
+        "center": {
+          "x": 0.0,
+          "y": 4.995297,
+          "z": -0.439738274
+        },
+        "front": {
+          "x": 0.0,
+          "y": 4.995297,
+          "z": 5.000001
+        },
+        "back": {
+          "x": 0.0,
+          "y": 4.995297,
+          "z": -5.8794775
+        },
+        "right": {
+          "x": 3.500572,
+          "y": 4.995297,
+          "z": -0.439738274
+        },
+        "left": {
+          "x": -3.500572,
+          "y": 4.995297,
+          "z": -0.439738274
+        },
+        "top": {
+          "x": 0.0,
+          "y": 10.0000019,
+          "z": -0.439738274
+        },
+        "bottom": {
+          "x": 0.0,
+          "y": -0.009407997,
+          "z": -0.439738274
+        }
+      },
+      "substructure": [
+        {
+          "name": "default",
+          "materials": [
+            "defaultMat"
+          ]
+        }
+      ],
+      "composite_object": false,
+      "volume": 465.151154,
+      "container_shapes": [],
+      "name": "ramp45_3",
+      "urls": {
+        "Windows": "file:////Users/cfang/balls/TDW_objects/Windows/ramp45_3",
+        "Darwin": "file:////Users/cfang/balls/TDW_objects/Darwin/ramp45_3",
+        "Linux": "file:////Users/cfang/balls/TDW_objects/Linux/ramp45_3"
+      }
+    },
+    "ramp45_4": {
+      "wnid": "",
+      "wcategory": "",
+      "scale_factor": 1.0,
+      "do_not_use": false,
+      "do_not_use_reason": "",
+      "canonical_rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "flex": false,
+      "physics_quality": 1.0,
+      "asset_bundle_sizes": {
+        "Windows": 0,
+        "Darwin": 53547,
+        "Linux": 0
+      },
+      "bounds": {
+        "center": {
+          "x": 0.0,
+          "y": 4.99529648,
+          "z": -0.439739227
+        },
+        "front": {
+          "x": 0.0,
+          "y": 4.99529648,
+          "z": 5.0
+        },
+        "back": {
+          "x": 0.0,
+          "y": 4.99529648,
+          "z": -5.87947845
+        },
+        "right": {
+          "x": 3.5,
+          "y": 4.99529648,
+          "z": -0.439739227
+        },
+        "left": {
+          "x": -3.5,
+          "y": 4.99529648,
+          "z": -0.439739227
+        },
+        "top": {
+          "x": 0.0,
+          "y": 10.000001,
+          "z": -0.439739227
+        },
+        "bottom": {
+          "x": 0.0,
+          "y": -0.009407997,
+          "z": -0.439739227
+        }
+      },
+      "substructure": [
+        {
+          "name": "default",
+          "materials": [
+            "defaultMat"
+          ]
+        }
+      ],
+      "composite_object": false,
+      "volume": 410.378265,
+      "container_shapes": [],
+      "name": "ramp45_4",
+      "urls": {
+        "Windows": "file:////Users/cfang/balls/TDW_objects/Windows/ramp45_4",
+        "Darwin": "file:////Users/cfang/balls/TDW_objects/Darwin/ramp45_4",
+        "Linux": "file:////Users/cfang/balls/TDW_objects/Linux/ramp45_4"
+      }
+    },
+    "surface3": {
+      "wnid": "",
+      "wcategory": "",
+      "scale_factor": 1.0,
+      "do_not_use": false,
+      "do_not_use_reason": "",
+      "canonical_rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "flex": false,
+      "physics_quality": 1.0,
+      "asset_bundle_sizes": {
+        "Windows": 0,
+        "Darwin": 36086,
+        "Linux": 0
+      },
+      "bounds": {
+        "center": {
+          "x": 0.0,
+          "y": 0.1181545,
+          "z": -5.94313669
+        },
+        "front": {
+          "x": 0.0,
+          "y": 0.1181545,
+          "z": 0.0
+        },
+        "back": {
+          "x": 0.0,
+          "y": 0.1181545,
+          "z": -11.8862734
+        },
+        "right": {
+          "x": 5.0,
+          "y": 0.1181545,
+          "z": -5.94313669
+        },
+        "left": {
+          "x": -5.0,
+          "y": 0.1181545,
+          "z": -5.94313669
+        },
+        "top": {
+          "x": 0.0,
+          "y": 0.243154,
+          "z": -5.94313669
+        },
+        "bottom": {
+          "x": 0.0,
+          "y": -0.00684499741,
+          "z": -5.94313669
+        }
+      },
+      "substructure": [
+        {
+          "name": "default",
+          "materials": [
+            "defaultMat"
+          ]
+        }
+      ],
+      "composite_object": false,
+      "volume": 24.9998989,
+      "container_shapes": [],
+      "name": "surface3",
+      "urls": {
+        "Windows": "file:////Users/cfang/balls/TDW_objects/Windows/surface3",
+        "Darwin": "file:////Users/cfang/balls/TDW_objects/Darwin/surface3",
+        "Linux": "file:////Users/cfang/balls/TDW_objects/Linux/surface3"
+      }
+    },
+    "surface4": {
+      "wnid": "",
+      "wcategory": "",
+      "scale_factor": 1.0,
+      "do_not_use": false,
+      "do_not_use_reason": "",
+      "canonical_rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "flex": false,
+      "physics_quality": 1.0,
+      "asset_bundle_sizes": {
+        "Windows": 0,
+        "Darwin": 36210,
+        "Linux": 0
+      },
+      "bounds": {
+        "center": {
+          "x": 0.0,
+          "y": 0.118153505,
+          "z": -10.9431362
+        },
+        "front": {
+          "x": 0.0,
+          "y": 0.118153505,
+          "z": 0.0
+        },
+        "back": {
+          "x": 0.0,
+          "y": 0.118153505,
+          "z": -21.8862724
+        },
+        "right": {
+          "x": 5.0,
+          "y": 0.118153505,
+          "z": -10.9431362
+        },
+        "left": {
+          "x": -5.0,
+          "y": 0.118153505,
+          "z": -10.9431362
+        },
+        "top": {
+          "x": 0.0,
+          "y": 0.243153,
+          "z": -10.9431362
+        },
+        "bottom": {
+          "x": 0.0,
+          "y": -0.006845996,
+          "z": -10.9431362
+        }
+      },
+      "substructure": [
+        {
+          "name": "default",
+          "materials": [
+            "defaultMat"
+          ]
+        }
+      ],
+      "composite_object": false,
+      "volume": 24.9999,
+      "container_shapes": [],
+      "name": "surface4",
+      "urls": {
+        "Windows": "file:////Users/cfang/balls/TDW_objects/Windows/surface4",
+        "Darwin": "file:////Users/cfang/balls/TDW_objects/Darwin/surface4",
+        "Linux": "file:////Users/cfang/balls/TDW_objects/Linux/surface4"
+      }
+    },
+    "plane": {
+      "wnid": "",
+      "wcategory": "",
+      "scale_factor": 1.0,
+      "do_not_use": false,
+      "do_not_use_reason": "",
+      "canonical_rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "flex": false,
+      "physics_quality": 1.0,
+      "asset_bundle_sizes": {
+        "Windows": 0,
+        "Darwin": 35742,
+        "Linux": 0
+      },
+      "bounds": {
+        "center": {
+          "x": 0.0,
+          "y": -0.0018455,
+          "z": -10.9431362
+        },
+        "front": {
+          "x": 0.0,
+          "y": -0.0018455,
+          "z": 0.0
+        },
+        "back": {
+          "x": 0.0,
+          "y": -0.0018455,
+          "z": -21.8862724
+        },
+        "right": {
+          "x": 5.0,
+          "y": -0.0018455,
+          "z": -10.9431362
+        },
+        "left": {
+          "x": -5.0,
+          "y": -0.0018455,
+          "z": -10.9431362
+        },
+        "top": {
+          "x": 0.0,
+          "y": 0.003155,
+          "z": -10.9431362
+        },
+        "bottom": {
+          "x": 0.0,
+          "y": -0.006846,
+          "z": -10.9431362
+        }
+      },
+      "substructure": [
+        {
+          "name": "default",
+          "materials": [
+            "defaultMat"
+          ]
+        }
+      ],
+      "composite_object": false,
+      "volume": 1.0001,
+      "container_shapes": [],
+      "name": "plane",
+      "urls": {
+        "Windows": "file:////Users/cfang/balls/TDW_objects/Windows/plane",
+        "Darwin": "file:////Users/cfang/balls/TDW_objects/Darwin/plane",
+        "Linux": "file:////Users/cfang/balls/TDW_objects/Linux/plane"
+      }
+    }
+  },
+  "description": "Centered Objs"
+}

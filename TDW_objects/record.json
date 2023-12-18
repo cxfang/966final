@@ -1,0 +1,73 @@
+{
+  "wnid": "",
+  "wcategory": "",
+  "scale_factor": 1.0,
+  "do_not_use": false,
+  "do_not_use_reason": "",
+  "canonical_rotation": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "flex": false,
+  "physics_quality": 1.0,
+  "asset_bundle_sizes": {
+    "Windows": 0,
+    "Darwin": 35742,
+    "Linux": 0
+  },
+  "bounds": {
+    "center": {
+      "x": 0.0,
+      "y": -0.0018455,
+      "z": -10.9431362
+    },
+    "front": {
+      "x": 0.0,
+      "y": -0.0018455,
+      "z": 0.0
+    },
+    "back": {
+      "x": 0.0,
+      "y": -0.0018455,
+      "z": -21.8862724
+    },
+    "right": {
+      "x": 5.0,
+      "y": -0.0018455,
+      "z": -10.9431362
+    },
+    "left": {
+      "x": -5.0,
+      "y": -0.0018455,
+      "z": -10.9431362
+    },
+    "top": {
+      "x": 0.0,
+      "y": 0.003155,
+      "z": -10.9431362
+    },
+    "bottom": {
+      "x": 0.0,
+      "y": -0.006846,
+      "z": -10.9431362
+    }
+  },
+  "substructure": [
+    {
+      "name": "default",
+      "materials": [
+        "defaultMat"
+      ]
+    }
+  ],
+  "composite_object": false,
+  "volume": 1.0001,
+  "container_shapes": [],
+  "name": "plane",
+  "urls": {
+    "Windows": "file:////Users/cfang/balls/TDW_objects/Windows/plane",
+    "Darwin": "file:////Users/cfang/balls/TDW_objects/Darwin/plane",
+    "Linux": "file:////Users/cfang/balls/TDW_objects/Linux/plane"
+  }
+}
