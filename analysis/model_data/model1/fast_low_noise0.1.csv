@@ -1,0 +1,7 @@
+collider_position,model_prediction,friction,speed,noise
+5,1.0,low,fast,0.1
+12,1.0,low,fast,0.1
+14,1.0,low,fast,0.1
+15,0.8333333333333334,low,fast,0.1
+16,0.23333333333333334,low,fast,0.1
+17,0.13333333333333333,low,fast,0.1

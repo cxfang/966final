@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My experiment</title>
+    <script src="jspsych/dist/jspsych.js"></script>
+    <script src="jspsych/dist/plugin-html-keyboard-response.js"></script>
+    <script src="jspsych/dist/plugin-video-keyboard-response.js"></script>
+    <script src="jspsych/dist/plugin-preload.js"></script>
+    <script src="jspsych/dist/plugin-survey-text.js"></script>
+    <script src="https://randojs.com/1.0.0.js"></script>
+    <link rel="stylesheet" href="jspsych/dist/jspsych.css">
+  </head>
+  <body></body>
+  <script>
+
+    var collider_dict = {
+      'slow_high': [1, 2, 3, 4, 6, 13],
+      'slow_med': [1, 2, 3, 4, 5, 7, 10],
+      'slow_low': [1, 2, 3, 4, 5, 7, 12],
+      'med_high': [1, 3, 5, 6, 7, 8, 10, 13],
+      'med_med': [1, 4, 6, 7, 8, 9, 11, 14],
+      'med_low': [2, 5, 7, 8, 9, 10, 12, 16],
+      'fast_high': [4, 8, 10, 11, 12, 13, 15, 17],
+      'fast_med': [6, 11, 13, 14, 15, 16, 17],
+      'fast_low': [5, 12, 14, 15, 16, 17]
+    }
+
+    function shuffleArray(array) {
+      var new_arr = array.map((x) => x);
+      for (var i = new_arr.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = new_arr[i];
+        new_arr[i] = new_arr[j];
+        new_arr[j] = temp;
+      }
+      return new_arr;
+    }
+
+    function getControlVideoOrder() {
+      videos = []
+      speed = ['slow', 'med', 'fast'];
+      fric = ['high', 'med', 'low'];
+      for (var i = 0; i < speed.length; i++) {
+        for (var j = 0; j < fric.length; j++) {
+          comb = `${speed[i]}_${fric[j]}`
+          // collider_idxs = collider_dict[comb];
+          rand_order = shuffleArray(collider_dict[comb]);
+          leftSide = rand_order.slice(0,Math.ceil(rand_order.length / 2));
+          rightSide = rand_order.slice(Math.ceil(rand_order.length / 2), rand_order.length);
+
+          for (var x = 0; x < leftSide.length; x++) {
+            videos.push(`videos/${comb}_c${leftSide[x]}_white.mov`);
+          }
+          for (var x = 0; x < rightSide.length; x++) {
+            videos.push(`videos/${comb}_c${rightSide[x]}_white_mirror.mov`);
+          }
+        }
+      }
+      // console.log(videos);
+      return shuffleArray(videos);
+    }
+
+    function getExpVideoOrder() {
+      videos = []
+      speed = ['slow', 'med', 'fast'];
+      fric = ['high', 'med', 'low'];
+      color_arr = ['teal', 'pink', 'tan', 'purple'];
+      for (var i = 0; i < speed.length; i++) {
+        for (var j = 0; j < fric.length; j++) {
+          comb = `${speed[i]}_${fric[j]}`
+          collider_pos = collider_dict[comb];
+          // rand_order = shuffleArray(collider_dict[comb]);
+          // leftSide = rand_order.slice(0,Math.ceil(rand_order.length / 2));
+          // rightSide = rand_order.slice(Math.ceil(rand_order.length / 2), rand_order.length);
+          for (var x = 0; x < collider_pos.length; x++) {
+            color_order = shuffleArray(color_arr);
+            videos.push(`videos/${comb}_c${collider_pos[x]}_${color_order[0]}.mov`);
+            videos.push(`videos/${comb}_c${collider_pos[x]}_${color_order[1]}_mirror.mov`);
+            if (comb == 'slow_high') {
+              if (x == 0 || x == 1) {
+                videos.push(`videos/${comb}_c${collider_pos[x]}_${color_order[2]}.mov`);
+                videos.push(`videos/${comb}_c${collider_pos[x]}_${color_order[3]}_mirror.mov`);
+              }
+            } else if (comb == 'slow_med' || comb == 'slow_low') {
+              if (x == 1 || x == 2) {
+                if (Math.random() > 0.5) {
+                  videos.push(`videos/${comb}_c${collider_pos[x]}_${color_order[2]}.mov`);
+                } else {
+                  videos.push(`videos/${comb}_c${collider_pos[x]}_${color_order[2]}_mirror.mov`);
+                }
+              }
+            } else if (comb == 'fast_med') {
+              if (x == 4 || x == 5) {
+                if (Math.random() > 0.5) {
+                  videos.push(`videos/${comb}_c${collider_pos[x]}_${color_order[2]}.mov`);
+                } else {
+                  videos.push(`videos/${comb}_c${collider_pos[x]}_${color_order[2]}_mirror.mov`);
+                }
+              }              
+            } else if (comb == 'fast_low') {
+              if (x == 4 || x == 5) {
+                videos.push(`videos/${comb}_c${collider_pos[x]}_${color_order[2]}.mov`);
+                videos.push(`videos/${comb}_c${collider_pos[x]}_${color_order[3]}_mirror.mov`);
+              }
+            }
+          }
+        }
+      }
+      console.log(videos.length);
+      console.log(videos);
+      return videos;
+    }
+
+    exp_video_arr = getExpVideoOrder();
+    // exp_video_arr = ['videos/fast_high_c4_pink.mov', 'videos/fast_high_c10_purple.mov', 'videos/med_low_c2_teal.mov']
+    
+    control_arr1 = getControlVideoOrder();//.slice(0,5);
+    control_arr2 = getControlVideoOrder();
+
+    function makeStimArray(video_arr) {
+      stimArr = [];
+      for (var i = 0; i < video_arr.length; i++) {
+        stimArr.push({stimulus: [ video_arr[i] ]});
+      }
+      return stimArr;
+    }
+    
+    var control_stimuli1 = makeStimArray(control_arr1)//.slice(0,5);//control_arr1);
+    var control_stimuli2 = makeStimArray(control_arr2);
+
+    // var exp_stimuli = [
+    //   {stimulus: [ "videos/fast_high_c4_pink.mov" ]},
+    //   {stimulus: [ "videos/fast_high_c10_purple.mov" ]},
+    //   {stimulus: [ "videos/med_low_c2_teal.mov" ]},
+    // ]
+
+    var exp_stimuli = makeStimArray(exp_video_arr);
+
+    /* initialize jsPsych */
+    var jsPsych = initJsPsych({
+      override_safe_mode: true,
+      show_progress_bar: true,
+      on_finish: function () {
+        saveData(jsPsych.data.get().csv());
+        // location.replace("https://app.prolific.com/submissions/complete?cc=C1ICGAGR")
+      },
+      // on_finish: function() {
+      //   jsPsych.data.displayData();
+      // }
+    });
+
+    function saveData(data){
+      var xhr = new XMLHttpRequest();
+      xhr.open('POST', 'write_data.php'); // 'write_data.php' is the path to the php file described above.
+      xhr.setRequestHeader('Content-Type', 'application/json');
+      xhr.send(JSON.stringify({filedata: data}));
+    }
+
+    /* create timeline */
+    var timeline = [];
+
+    /* preload images */
+    var preload = {
+      type: jsPsychPreload,
+      video: control_arr1.concat(control_arr2).concat(exp_video_arr),
+    };
+    timeline.push(preload);
+
+    /* define welcome message trial */
+    var welcome = {
+      type: jsPsychHtmlKeyboardResponse,
+      stimulus: "Welcome to the experiment. Press any key to begin."
+    };
+    timeline.push(welcome);
+
+    /* define instructions trial */
+    var instructions = {
+      type: jsPsychHtmlKeyboardResponse,
+      stimulus: `
+        <p>In this experiment, you will be shown short movies containing two objects. One of the objects will be moving toward the other.</p>
+        <p>In these movies, the moving object either collides with the stationary object, or it comes to a stop before reaching the stationary object.
+          However, you will be shown a clipped version of the movie that does not reveal the ending.</p> 
+        <p>Please watch each clip carefully. Then predict whether or not the two objects will collide later on in the video.</p>
+        <p>Press the <b>"F"</b> key for <b>yes</b>, the objects will collide.</p> 
+        <p>Press the <b>"J"</b> key for <b>no</b>, the objects will not collide.</p>
+        <p>Press any key to start.</p>
+      `,
+      post_trial_gap: 1500
+    };
+    timeline.push(instructions);
+
+    /* define fixation and test trials */
+    var fixation = {
+      type: jsPsychHtmlKeyboardResponse,
+      stimulus: '<div style="font-size:60px;">+</div>',
+      choices: "NO_KEYS",
+      trial_duration: function () {
+        return jsPsych.randomization.sampleWithoutReplacement([500, 750, 1000], 1)[0];
+      },
+      data: {
+        task: 'fixation'
+      }
+    };
+
+    var count = 0;
+    var experiment = {
+      type: jsPsychVideoKeyboardResponse,
+      stimulus: jsPsych.timelineVariable('stimulus'),
+      prompt: `<p>Will the objects collide?</p>
+      <p><b>F</b> - Yes</p>
+      <p><b>J</b> - No</p>`,
+      choices: ['f', 'j'],
+      data: {
+        task: 'response',
+        test_trial: false
+      },
+      height: 250,
+      width: 600,
+      on_finish: function (data) {
+        count += 1 ;
+      }
+    };
+
+    var intermission = {
+      type: jsPsychHtmlKeyboardResponse,
+      stimulus: `<p>You can take a quick break now if you need it.</p>
+      <p>Press the spacebar to continue.</p>`,
+      choices: [" "]
+    };
+
+    var if_node = {
+        timeline: [intermission],
+        conditional_function: function() {
+            if(count % 20 == 0) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+    }
+
+    var control_procedure1 = {
+      timeline: [fixation, experiment, if_node],
+      timeline_variables: control_stimuli1,
+      repetitions: 1,
+      randomize_order: true
+    };
+    timeline.push(control_procedure1);
+    
+    timeline.push(intermission);
+
+    var exp_procedure = {
+      timeline: [fixation, experiment, if_node],
+      timeline_variables: exp_stimuli,
+      repetitions: 1,
+      randomize_order: true
+    };
+    timeline.push(exp_procedure);
+
+    timeline.push(intermission);
+
+    var control_procedure2 = {
+      timeline: [fixation, experiment, if_node],
+      timeline_variables: control_stimuli2,
+      repetitions: 1,
+      randomize_order: true
+    };
+    timeline.push(control_procedure2);
+
+    /* define debrief */
+    var debrief_block = {
+      type: jsPsychHtmlKeyboardResponse,
+      stimulus: function () {
+        // var trials = jsPsych.data.get().filter({ task: 'response', test_trial: false });
+        // var rt = Math.round(correct_trials.select('rt').mean());
+        return `<p>Thank you for completing the experiment.</p>`;
+      }
+    };
+    timeline.push(debrief_block);
+
+    /* start the experiment */
+    jsPsych.run(timeline);
+
+  </script>
+</html>
